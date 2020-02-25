@@ -6,7 +6,7 @@ use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 
-class CustomProductRepositoryImplementation implements ProductRepositoryInterface
+class CustomProductRepository implements ProductRepositoryInterface
 {
     /**
      * Create product
