@@ -3,4 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Simplified\FirstModule\NotMagento\PencilInterface"
                 type="Simplified\FirstModule\NotMagento\RedPencil" />
+    <preference for="Magento\Catalog\Api\ProductRepositoryInterface"
+                type="Simplified\FirstModule\Model\CustomProductRepositoryImplementation" />
 </config>
