@@ -9,9 +9,16 @@
                 type="Simplified\FirstModule\Model\Color\Yellow" />
     <preference for="Simplified\FirstModule\Api\SizeInterface"
                 type="Simplified\FirstModule\Model\Size\Normal" />
+    <preference for="Simplified\FirstModule\Api\BrightnessInterface"
+                type="Simplified\FirstModule\Model\Brightness\Dark" />
+    <virtualType name="virtualRedColor" type="Simplified\FirstModule\Model\Color\Red">
+        <arguments>
+            <argument name="brightness" xsi:type="object">Simplified\FirstModule\Model\Brightness\Light</argument>
+        </arguments>
+    </virtualType>
     <type name="Simplified\FirstModule\Model\Pencil">
         <arguments>
-            <argument name="color" xsi:type="object">Simplified\FirstModule\Model\Color\Red</argument>
+            <argument name="color" xsi:type="object">virtualRedColor</argument>
             <argument name="size" xsi:type="object">Simplified\FirstModule\Model\Size\Big</argument>
         </arguments>
     </type>
