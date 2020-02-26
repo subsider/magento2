@@ -15,4 +15,14 @@
             <argument name="size" xsi:type="object">Simplified\FirstModule\Model\Size\Big</argument>
         </arguments>
     </type>
+    <type name="Simplified\FirstModule\Model\Student">
+        <arguments>
+            <argument name="name" xsi:type="string">Charles</argument>
+            <argument name="age" xsi:type="number">39</argument>
+            <argument name="scores" xsi:type="array">
+                <item name="maths" xsi:type="number">100</item>
+                <item name="programming" xsi:type="number">100</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
