@@ -4,23 +4,23 @@ namespace Simplified\FirstModule\Controller\Page;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
-use Simplified\FirstModule\Api\PencilInterface;
+use Simplified\FirstModule\Model\PencilFactory;
 
 class Pencil extends Action
 {
     /**
-     * @var PencilInterface
+     * @var PencilFactory
      */
-    private $pencil;
+    private $pencilFactory;
 
     /**
      * Pencil constructor.
      * @param Context $context
-     * @param PencilInterface $pencil
+     * @param PencilFactory $pencilFactory
      */
-    public function __construct(Context $context, PencilInterface $pencil)
+    public function __construct(Context $context, PencilFactory $pencilFactory)
     {
-        $this->pencil = $pencil;
+        $this->pencilFactory = $pencilFactory;
         parent::__construct($context);
     }
 
@@ -29,6 +29,11 @@ class Pencil extends Action
      */
     public function execute()
     {
-        echo $this->pencil->getPencilType();
+        $pencil = $this->pencilFactory->create([
+            'name' => 'Regular pencil',
+            'school' => 'Middle school',
+        ]);
+
+        echo "{$pencil->getPencilType()} and its name is {$pencil->getName()} for {$pencil->getSchool()}";
     }
 }

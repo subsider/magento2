@@ -19,19 +19,40 @@ class Pencil implements PencilInterface
     private $size;
 
     /**
+     * @var string|null
+     */
+    private $name;
+
+    /**
+     * @var string|null
+     */
+    private $school;
+
+    /**
      * Pencil constructor.
      * @param ColorInterface $color
      * @param SizeInterface $size
+     * @param null|string $name
+     * @param null|string $school
      */
-    public function __construct(ColorInterface $color, SizeInterface $size)
+    public function __construct(ColorInterface $color, SizeInterface $size, $name = null, $school = null)
     {
         $this->color = $color;
         $this->size = $size;
+        $this->name = $name;
+        $this->school = $school;
     }
 
-    /**
-     * @return string
-     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getSchool()
+    {
+        return $this->school;
+    }
+
     public function getPencilType()
     {
         return "Our pencil has {$this->color->getColor()} color and {$this->size->getSize()} size";
