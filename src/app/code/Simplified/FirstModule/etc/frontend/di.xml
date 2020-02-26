@@ -1,8 +1,18 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Simplified\FirstModule\NotMagento\PencilInterface"
-                type="Simplified\FirstModule\NotMagento\RedPencil" />
     <preference for="Magento\Catalog\Api\ProductRepositoryInterface"
-                type="Simplified\FirstModule\Model\CustomProductRepository" />
+                type="Simplified\FirstModule\Model\ResourceModel\CustomProductRepository" />
+    <preference for="Simplified\FirstModule\Api\PencilInterface"
+                type="Simplified\FirstModule\Model\Pencil" />
+    <preference for="Simplified\FirstModule\Api\ColorInterface"
+                type="Simplified\FirstModule\Model\Color\Yellow" />
+    <preference for="Simplified\FirstModule\Api\SizeInterface"
+                type="Simplified\FirstModule\Model\Size\Normal" />
+    <type name="Simplified\FirstModule\Model\Pencil">
+        <arguments>
+            <argument name="color" xsi:type="object">Simplified\FirstModule\Model\Color\Red</argument>
+            <argument name="size" xsi:type="object">Simplified\FirstModule\Model\Size\Big</argument>
+        </arguments>
+    </type>
 </config>

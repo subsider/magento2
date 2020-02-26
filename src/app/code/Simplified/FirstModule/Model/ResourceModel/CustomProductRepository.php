@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplified\FirstModule\Model;
+namespace Simplified\FirstModule\Model\ResourceModel;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;

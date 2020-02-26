@@ -4,7 +4,7 @@ namespace Simplified\FirstModule\Controller\Page;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
-use Simplified\FirstModule\NotMagento\PencilInterface;
+use Simplified\FirstModule\Api\PencilInterface;
 
 class Pencil extends Action
 {
