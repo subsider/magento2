@@ -32,4 +32,7 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="product_before_set_name" type="Simplified\FirstModule\Plugin\ProductPlugin" sortOrder="10" />
+    </type>
 </config>
