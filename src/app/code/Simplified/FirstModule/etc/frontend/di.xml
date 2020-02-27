@@ -35,4 +35,15 @@
     <type name="Magento\Catalog\Model\Product">
         <plugin name="product_before_set_name" type="Simplified\FirstModule\Plugin\ProductPlugin" sortOrder="10" />
     </type>
+    <type name="Simplified\FirstModule\Controller\Page\HelloWorld">
+        <plugin name="on_helloworld_execute_sort_order_10"
+                type="Simplified\FirstModule\Plugin\HelloWorldActionPluginSortOrder10"
+                sortOrder="10" />
+        <plugin name="on_helloworld_execute_sort_order_20"
+                type="Simplified\FirstModule\Plugin\HelloWorldActionPluginSortOrder20"
+                sortOrder="20" />
+        <plugin name="on_helloworld_execute_sort_order_30"
+                type="Simplified\FirstModule\Plugin\HelloWorldActionPluginSortOrder30"
+                sortOrder="30" />
+    </type>
 </config>

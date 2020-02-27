@@ -8,6 +8,6 @@ class HelloWorld extends Action
 {
     public function execute()
     {
-        echo 'Hello world';
+        echo 'Hello world' . '<br>';
     }
 }
