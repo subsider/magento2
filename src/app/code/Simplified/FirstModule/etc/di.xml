@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--<type name="Magento\Catalog\Model\Product">
+        <plugin name="product_before_set_name" type="Simplified\FirstModule\Plugin\ProductPlugin" sortOrder="10" />
+    </type>-->
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="hello_world" xsi:type="object">Simplified\FirstModule\Console\Command\HelloWorld</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
