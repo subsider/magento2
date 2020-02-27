@@ -225,6 +225,7 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Simplified_FirstModule' => 1,
+        'Simplified_RequestFlow' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Yotpo_Yotpo' => 1
