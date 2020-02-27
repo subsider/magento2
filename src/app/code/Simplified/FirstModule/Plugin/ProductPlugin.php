@@ -8,6 +8,11 @@ class ProductPlugin
 {
     public function beforeSetName(Product $subject, $name)
     {
-        return "Before plugin {$name}";
+        return "Before plugin - {$name}";
+    }
+
+    public function afterGetName(Product $subject, $result)
+    {
+        return "{$result} - After plugin";
     }
 }
