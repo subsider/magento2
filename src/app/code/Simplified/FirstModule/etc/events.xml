@@ -3,4 +3,7 @@
     <event name="checkout_submit_all_after">
         <observer name="log_text" instance="Simplified\FirstModule\Observer\LogTextAtCheckout" />
     </event>
+    <event name="custom_event">
+        <observer name="greeting" instance="Simplified\FirstModule\Observer\GreetWhenMeet" />
+    </event>
 </config>
