@@ -26,8 +26,12 @@ class CatalogPlugin extends Action
 
     public function execute()
     {
+        echo 'Testing plugin for getName()' . '<br>';
         $product = $this->productFactory->create()->load(1);
         $product->setName('iPhone 6');
         var_dump($product->getName());
+
+        echo '<br>' . 'Testing plugin for getIdBySku($sku)' . '<br>';
+        $product->getIdBySku('Test product');
     }
 }
