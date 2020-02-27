@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Catalog\Api\ProductRepositoryInterface"
-                type="Simplified\FirstModule\Model\ResourceModel\CustomProductRepository" />
+    <!--<preference for="Magento\Catalog\Api\ProductRepositoryInterface"
+                type="Simplified\FirstModule\Model\ResourceModel\CustomProductRepository" />-->
     <preference for="Simplified\FirstModule\Api\PencilInterface"
                 type="Simplified\FirstModule\Model\Pencil" />
     <preference for="Simplified\FirstModule\Api\ColorInterface"
@@ -32,7 +32,7 @@
             </argument>
         </arguments>
     </type>
-    <type name="Magento\Catalog\Model\Product">
+    <!--<type name="Magento\Catalog\Model\Product">
         <plugin name="product_before_set_name" type="Simplified\FirstModule\Plugin\ProductPlugin" sortOrder="10" />
     </type>
     <type name="Simplified\FirstModule\Controller\Page\HelloWorld">
@@ -45,5 +45,5 @@
         <plugin name="on_helloworld_execute_sort_order_30"
                 type="Simplified\FirstModule\Plugin\HelloWorldActionPluginSortOrder30"
                 sortOrder="30" />
-    </type>
+    </type>-->
 </config>
