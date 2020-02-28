@@ -42,7 +42,7 @@
         <plugin name="on_helloworld_execute_sort_order_30"
                 type="Simplified\FirstModule\Plugin\HelloWorldActionPluginSortOrder30"
                 sortOrder="30" />
-    </type>-->
+    </type>
     <type name="Simplified\FirstModule\Controller\Page\HeavyService">
         <arguments>
             <argument name="heavyService" xsi:type="object">Simplified\FirstModule\Model\HeavyService\Proxy</argument>
