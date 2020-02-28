@@ -4,7 +4,7 @@ namespace Simplified\Database\Api\Data;
 
 interface AffiliateMemberInterface
 {
-    const ID = 'id';
+    const ID = 'entity_id';
     const NAME = 'name';
     const STATUS = 'status';
     const ADDRESS = 'address';

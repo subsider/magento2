@@ -13,9 +13,6 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
         $this->_init(AffiliateMemberResource::class);
     }
 
-    /**
-     * @return int
-     */
     public function getId()
     {
         return $this->getData(AffiliateMemberInterface::ID);
@@ -75,7 +72,7 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setName(string $name)
     {
-        return $this->setData(AffiliateMemberInterface::NAME);
+        return $this->setData(AffiliateMemberInterface::NAME, $name);
     }
 
     /**
@@ -84,7 +81,7 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setStatus(bool $status)
     {
-        return $this->setData(AffiliateMemberInterface::STATUS);
+        return $this->setData(AffiliateMemberInterface::STATUS, $status);
     }
 
     /**
@@ -93,7 +90,7 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setAddress(string $address)
     {
-        return $this->setData(AffiliateMemberInterface::ADDRESS);
+        return $this->setData(AffiliateMemberInterface::ADDRESS, $address);
     }
 
     /**
@@ -102,7 +99,7 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setPhoneNumber(string $phoneNumber)
     {
-        return $this->setData(AffiliateMemberInterface::PHONE_NUMBER);
+        return $this->setData(AffiliateMemberInterface::PHONE_NUMBER, $phoneNumber);
     }
 
     /**
@@ -111,7 +108,7 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setCreatedAt(string $createdAt)
     {
-        return $this->setData(AffiliateMemberInterface::CREATED_AT);
+        return $this->setData(AffiliateMemberInterface::CREATED_AT, $createdAt);
     }
 
     /**
@@ -120,6 +117,6 @@ class AffiliateMember extends AbstractModel implements AffiliateMemberInterface
      */
     public function setUpdatedAt(string $updatedAt)
     {
-        return $this->setData(AffiliateMemberInterface::UPDATED_AT);
+        return $this->setData(AffiliateMemberInterface::UPDATED_AT, $updatedAt);
     }
 }

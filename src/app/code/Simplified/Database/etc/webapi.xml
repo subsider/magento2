@@ -7,4 +7,22 @@
             <resource ref="anonymous" />
         </resources>
     </route>
+    <route method="GET" url="/V1/affiliate_member/:id">
+        <service class="Simplified\Database\Api\AffiliateMemberRepositoryInterface" method="getAffiliateMemberById" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="POST" url="/V1/affiliate_member">
+        <service class="Simplified\Database\Api\AffiliateMemberRepositoryInterface" method="saveAffiliateMember" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="PUT" url="/V1/affiliate_member/:id">
+        <service class="Simplified\Database\Api\AffiliateMemberRepositoryInterface" method="updateAffiliateMember" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
 </routes>
