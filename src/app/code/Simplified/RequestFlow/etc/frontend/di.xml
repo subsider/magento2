@@ -11,7 +11,7 @@
             </argument>
         </arguments>
     </type>
-    <type name="Magento\Framework\App\RouterList">
+    <!--<type name="Magento\Framework\App\RouterList">
         <arguments>
             <argument name="routerList" xsi:type="array">
                 <item name="custom" xsi:type="array">
@@ -21,5 +21,5 @@
                 </item>
             </argument>
         </arguments>
-    </type>
+    </type>-->
 </config>
